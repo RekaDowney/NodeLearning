@@ -55,5 +55,5 @@
 
 　　`Linux`安装完毕`cnpm`包后，可以通过`alias npm='cnpm'`别名配置`cnpm`，这样以后输入`npm`就会以`cnpm`方式执行命令。注意：此方式在使用`which npm`时搜索出来的命令是原始`npm`而不是`cnpm`路径。
 
-　　`Windows`安装完毕`cnpm`包后，可以通过`@doskey npm=cnpm`别名配置`cnpm`，将其写入到某个`bat`文件中，打开注册表，找到`HKEY_CURRENT_USER\SOFTWARE\Microsoft\Command Processor`配置项，有面板新建字符串`AutoRun`，值为`bat`文件的绝对路径。后续开启`CMD`就会自动先执行该`bat`文件进行别名配置。注意：此方式仅对`CMD`有效，`PowerShell`启动时并不会自动执行该`bat`文件。（`PowerShell`起别名的命令为`Set-Alias npm cnpm`）
+　　`Windows`安装完毕`cnpm`包后，可以通过`@doskey npm=cnpm $*`别名配置`cnpm`，将其写入到某个`bat`文件中，打开注册表，找到`HKEY_CURRENT_USER\SOFTWARE\Microsoft\Command Processor`配置项，有面板新建字符串`AutoRun`，值为`bat`文件的绝对路径。后续开启`CMD`就会自动先执行该`bat`文件进行别名配置。注意：此方式仅对`CMD`有效，`PowerShell`启动时并不会自动执行该`bat`文件。（`PowerShell`起别名的命令为`Set-Alias npm cnpm`）
 
